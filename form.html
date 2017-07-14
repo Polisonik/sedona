@@ -26,17 +26,96 @@
         </ul>
       </nav>
       <div class="page-header--top">
-        <div class="container"> 
+        <div class="container">
           <div class="logo">
             <a class="logo--link" href="index.html">
               <img class="logo--img" src="img/logo-sedona-mobile.svg" alt="Sedona">
-            </a>  
+            </a>
           </div>
           <button class="page-header--togle" type="button">Открыть</button>
         </div>  
       </div>    
     </header>
     <main>
+      <div class="review">
+        <header class="review__header">
+          <div class="container">
+            <b class="review__header-title">Оставьте свой отзыв</b>
+            <p calss="review__header-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </header>
+        <form class="review__form" method="post"  action="https://echo.htmlacademy.ru/">
+          <fieldset class="review__item">
+            <legend class="review__item-title">Представьтесь</legend>
+            <div class="review__item-field">
+              <label class="review__item-label" for="name">Имя<sup class="review__item-index">*</sup>:</label>
+              <input class="review__item-input" name="name" type="text" id="name" placeholder="Петр">
+            </div>
+            <div class="review__item-field">
+              <label class="review__item-label" for="surname">Фамилия<sup class="review__item-index">*</sup>:</label>
+              <input class="review__item-input" name="surname" type="text" id="surname" placeholder="Иванов">
+            </div>
+            <div class="review__item-field">
+              <label class="review__item-label" for="patronymic">Отчество:</label>
+              <input class="review__item-input" name="patronymic" type="text" id="patronymic" placeholder="Иванов">
+            </div>          
+          </fieldset>
+          
+          <fieldset class="review__item">
+            <legend class="review__item-title">Контактная информация</legend>
+            <div class="review__item-field">
+              <label class="review__item-label" for="phone">Контактный телефон<sup class="review__item-index">*</sup>:</label>
+              <input class="review__item-input" name="phone" type="tel" id="phone" placeholder="Введите телефон">
+            </div>
+            <div class="review__item-field">
+              <label class="review__item-label" for="email">Электронная почта<sup class="review__item-index">*</sup>:</label>
+              <input class="review__item-input" name="email" type="email" id="email" placeholder="Введите e-mail">
+            </div>            
+          </fieldset>
+          
+          <fieldset class="review__item">
+            <legend class="review__item-title">Ваше общее впечатление:</legend>
+            <div class="review__item-field">
+              <input class="review__item-input" type="radio" name="impression" id="positive">
+              <label class="review__item-label" for="positive">Скорее положительное</label>
+            </div>
+            <div class="review__item-field">
+              <input class="review__item-input" type="radio" name="impression" id="negative">
+              <label class="review__item-label" for="negative">Скорее отрицательное</label>
+            </div>
+            <div class="review__item-field">
+              <input class="review__item-input" type="radio" name="impression" id="no-answer">              
+              <label class="review__item-label" for="positive">Затрудняюсь ответить</label>
+            </div>                       
+          </fieldset>
+          
+          <fieldset class="review__item">
+            <legend class="review__item-title">Посещенные достопримечательности:</legend>
+            <div class="review__item-field">
+              <input class="review__item-input" type="checkbox" name="bridge" id="bridge">
+              <label class="review__item-label" for="bridge">Мост Дьявола</label>
+            </div>
+            <div class="review__item-field">
+              <input class="review__item-input" type="checkbox" name="park" id="park">
+              <label class="review__item-label" for="park">Мост Дьявола</label>
+            </div>
+           <div class="review__item-field">
+              <input class="review__item-input" type="checkbox" name="mountain" id="mountain">
+              <label class="review__item-label" for="mountain">Гора-Колокол</label>
+            </div>
+            <div class="review__item-field">
+              <input class="review__item-input" type="checkbox" name="сliffs" id="сliffs">
+              <label class="review__item-label" for="сliffs">Красные скалы</label>
+            </div>  
+          </fieldset>
+          <fieldset class="review__item">
+            <legend class="review__item-title">Посещенные достопримечательности:</legend>
+            <textarea class="review__item-message" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="button button--send-review" type="submit">Отправить отзыв</button>
+        </form>
+      </div>   
+      
     </main>
     <footer class="main-footer">
       <section class="instagram">
