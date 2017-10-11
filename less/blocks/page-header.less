@@ -1,6 +1,9 @@
 .page-header {
 	position: relative;
 }
+.page-header__open-menu .page-header__togle--open {
+	display: none;	
+}
 .page-header__togle {
 	position: absolute;
 	background-color: transparent;
@@ -10,6 +13,7 @@
 	font-size: 0;
 	cursor: pointer;
 	&--close {
+		display: block;
 	  width: 36px;
 	  height: 28px;
 	  top: 10px;
@@ -29,13 +33,13 @@
 	min-height: 56px;
 }
 @media @tablet-width {
+	.page-header__logo {
+	  position: static;
+	  min-height: 0;
+  }
 	.page-header__togle {
 		display: none;
 	}
-	.page-header__logo {
-	  position: static;
-	 // min-height: 0;
-  }
 }
 
  
