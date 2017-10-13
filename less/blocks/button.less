@@ -1,0 +1,29 @@
+.button {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: @text-color-first;
+	font-size: @font-size-second;
+	line-height: @line-height;
+	font-weight: bold;
+	&--reservation {
+		padding: 15px 0; 
+	  background-color: @bg-color-first;
+	}
+	&:hover {
+		background-color: @bg-color-hover-link;
+	}
+	&:active {
+		background-color: @bg-color-active-link;
+	}
+	&--disabled {
+		background-color: @bg-color-disable;
+		&:hover {
+			background-color: @bg-color-disable;
+		}
+		&:active {
+			background-color: @bg-color-disable;
+		}
+	}
+}

@@ -1,12 +1,20 @@
 .features {
   margin-bottom: 30px;
 }
+.features__row {
+	&--right {
+		margin-bottom: 40px;
+	}
+}
+.feature__group {
+	background-color: @bg-color-second;
+}
 .features__title {
 	margin: 0;
 	padding: 0 10%;
 	margin-bottom: 30px;
 	text-align: center;
-	font-size: @font-size-add;
+	font-size: @font-size-first;
 	font-weight: normal;
 	line-height: @line-height;	
 	text-transform: uppercase;
@@ -15,31 +23,70 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 45px;
+	padding-left: 10%;
+	padding-right: 10%;	
 	text-align: center;
+	text-transform: uppercase;
 	&--town {
 		padding-top: 60px;		
+		position: relative;
+		z-index: 1;		
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 12%;
+			background-image: url('../img/bg-triangle.svg');
+		  background-position: top;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  z-index: 2;
+		}
 	}
 	&--bridge {
 		padding-top: 45px;
 	}
 	&--bg-blue {
-		background-color: @bg-color-add-first;
-		color: @text-color-add;
+		padding-bottom: 45px;
+		background-color: @bg-color-first;
+		color: @text-color-first;
+	}
+	&--bg-grey {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	&--underline {
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "";
+			height: 1px;
+			right: 6%;
+			left: 6%;
+			bottom: 0;			
+			background-color: @color-underline;
+		}
 	}
 }
 .features__item-title {
 	margin-bottom: 20px;
-	padding: 0 10%;
+	padding: 0;
 	font-size: @font-size;
 	line-height: @line-height;
-	font-weight: normal;
+	font-weight: bold;
 }
 .features__item-number {
-	padding: 0 10%;
+	margin-bottom: 14px;	
+	font-size: @font-size-first;
+	line-height: @line-height-first;
 }
 .features__item-description {
-	padding: 0 10%;
+	margin: 0;
+	padding: 0;
+	font-size: @font-size-first;
+	line-height: @line-height-first;
 }
 .features__picture img {
 	display: block;
@@ -49,10 +96,19 @@
 	.features__row {
 		display: flex;
 	}
+	.feature__group {
+		display: flex;
+	}
 	.features__item {
 		width: 33%;
 	}
+	.features__item-title {
+		font-size: @font-size-second;
+	}
 	.features__picture {
-		margin: 0;
+		width: 66%;
+	}
+	.features__picture img{
+	  margin: 0;
 	}
 }

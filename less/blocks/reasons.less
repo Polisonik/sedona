@@ -1,0 +1,63 @@
+.reasons {
+	padding-left: 21%;
+	padding-right: 15%;
+	padding-bottom: 40px;
+}
+.reasons-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.reasons__item {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&::before {
+		position: absolute;
+		content: "";
+		top: -5px;
+		left: -50px;
+		 background-repeat: no-repeat;
+		background-position: center;
+	}
+	&--hotel {
+		&::before {
+			width: 39px;
+			height: 37px;
+			background-image: url("../img/icon-house.svg");
+			
+		}		
+	}
+	&--souvenir {
+		&::before {
+			width: 39px;
+			height: 38px;
+			background-image: url("../img/icon-gift.svg");
+	  }
+	}
+	&--food {
+		&::before {
+			width: 40px;
+			height: 36px;
+			background-image: url("../img/icon-burger.svg");
+		}
+	}
+}
+.reasons__item-title {
+	margin-bottom: 20px;
+  font-size: @font-size;
+	line-height: @line-height;
+	font-weight: bold;
+}
+.reasons__item-text {
+	margin: 0;
+	padding: 0;
+	color: @text-color-second;
+	font-size: @font-size-first;
+	line-height: @line-height-first;
+}

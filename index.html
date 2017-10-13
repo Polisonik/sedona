@@ -16,10 +16,8 @@
         <a class="main-menu__link" href="https://htmlacademy.ru" title="HTML Academy">HTML Academy</a>
       </nav>      
 			<button class="page-header__togle  page-header__togle--close" type="button">Закрыть</button>			
-			<div class="page-header__logo">
-			  <div class="logo">  
-          <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="Седона">         
-  		  </div>
+			<div class="logo">  
+        <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="Седона">         
   		  <button class="page-header__togle  page-header__togle--open" type="button">Открыть</button>
 			</div>  
     </header>
@@ -46,9 +44,9 @@
             <img src="img/photo-city-mobile@1x.jpg"  alt="Седона - настоящий городок">
 					</div>            	
         </div>
-        	  
-        <div class="container">
-          <ul class="reasons">
+        
+        <section class="reasons">	  
+          <ul class="reasons-list">
             <li class="reasons__item  reasons__item--hotel">
               <b class="reasons__item-title">Жилье</b>
               <p class="reasons__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -62,52 +60,42 @@
               <p class="reasons__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
-        </div>
+        </section>
 
         <div class="features__row  features__row--left">
-          <div class="features__picture  feature__picture--bridge">
-            <img src="img/photo-bridge-mobile@1x.jpg"  alt="Мост Дьявола">
-          </div>
           <div class="features__item  features__item--bridge  features__item--bg-blue">
             <b class="features__item-title">Там есть мост Дьявола</b>
             <span class="features__item-number"> &#8211; №2 &#8211;</span>
             <p class="features__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно!</p>
-          </div>  
+          </div>
+          <div class="features__picture  feature__picture--bridge">
+            <img src="img/photo-bridge-mobile@1x.jpg"  alt="Мост Дьявола">
+          </div> 
 				</div>
         
-        <div class="feature__item  feature__item--bg-grey">
-          
-            <div class="feature__inner">  
-              <b class="feature__item-title">Небольшая площадь</b>
-              <span class="feature__item-number"> &#8211; №3 &#8211;</span>
-              <p class="feature__item-description">Все интересные места находятся очень близко</p>
-					  </div> 
-        </div>
-        <div class="feature__item  feature__item__bg-grey">
-          <div class="feature__inner">
-            <div class="container">
-							<b class="feature__item-title">Красивая дорога</b>
-              <span class="feature__item-number"> &#8211; №4 &#8211;</span>
-              <p class="feature__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-						</div>  
-          </div>          
-        </div>
-        <div class="feature__item  feature__item__bg-grey">
-          <div class="container">
-            <div class="feature__inner">  
-              <b class="feature__item-title">Мало туристов</b>
-              <span class="feature__item-number"> &#8211; №5 &#8211;</span>
-              <p class="feature__item-description">Большинство едет в Гранд Каньон и толпится там</p>
-						</div>  
-          </div>  
+        <div class="feature__group">
+          <div class="features__item  features__item--bg-grey features__item--underline">  
+            <b class="features__item-title">Небольшая площадь</b>
+            <span class="features__item-number"> &#8211; №3 &#8211;</span>
+            <p class="features__item-description">Все интересные места находятся очень близко</p>
+					</div>        
+          <div class="features__item  features__item--bg-grey  features__item--underline">
+            <b class="features__item-title">Красивая дорога</b>
+            <span class="features__item-number"> &#8211; №4 &#8211;</span>
+            <p class="features__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				  </div>  
+          <div class="features__item  features__item--bg-grey">
+            <b class="features__item-title">Мало туристов</b>
+            <span class="features__item-number"> &#8211; №5 &#8211;</span>
+            <p class="features__item-description">Большинство едет в Гранд Каньон и толпится там</p>
+				  </div>
         </div>               
       </section>
+      
       <section class="reservation">
-        <div class="container">
-          <b class="reservation__title">Заинтересовались?</b>
-          <p class="reservation__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#" class="button button--reservation" title="Найти гостиницу" tabindex="0">Найти гостиницу</a>
-        </div>  
+        <b class="reservation__title">Заинтересовались?</b>
+        <p class="reservation__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="#" class="button button--reservation  button--disabled" title="Найти гостиницу" tabindex="0" disabled>Найти гостиницу</a>
       </section>
       <div class="map"></div>
     </main>
@@ -115,21 +103,29 @@
     <footer class="page-footer">
       <section class="page-footer__instagram">
         <h3 class="page-footer__instagram-title  visually-hidden">Мы в instagram</h3>
-        <a class="page-footer__instagram-link" href="#" title="Visitsedona" tabindex="0">#Visitsedona</a>
+        <a class="page-footer__link  page-footer__link--instagram" href="#" title="Visitsedona" tabindex="0">#Visitsedona</a>
       </section>
       <section class="page-footer__socials  socials">
         <h3 class="socials__name visually-hidden">Мы в соцсетях</h3>
         <div class="socials__links">
-          <a class="social  social--Twitter" href="#" title="Twitter" tabindex="0">Мы в Twitter</a>
+          <a class="social  social--Twitter" href="#" title="Twitter" tabindex="0">Мы в Twitter
+            <svg class="social__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve" fill="#ffffff">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                </g>
+              </g>
+            </svg>
+          </a>
           <a class="social  social--Facebook" href="#" title="Facebook" tabindex="0">Мы в Facebook</a>
           <a class="social  social--Youtube" href="#" title="Youtube" tabindex="0">Мы в Youtube</a>          
         </div> 
       </section>
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" title="HTMLAcademy" tabindex="0">
+      <section class="page-footer__copyright">
+        <a class="page-footer__link  page-footer__link--copyright" href="https://htmlacademy.ru/intensive/adaptive" title="HTMLAcademy" tabindex="0">
 					<span class="page-footer__copyright-title">Разработано</span>
         </a>
-      </div>    
+      </section>    
     </footer>
 		<script src="js/open-menu.js"></script>
   </body>

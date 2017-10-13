@@ -1,3 +1,7 @@
+.logo {
+	position: relative;
+	min-height: 56px;
+}
 .logo__img {
 	position: absolute;
 	top: 0;
@@ -6,5 +10,8 @@
 	z-index: 2;
 }
 @media @tablet-width {
-	
+	.logo {
+	  position: static;
+	  min-height: 0;
+  }
 }
