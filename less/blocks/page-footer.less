@@ -18,7 +18,23 @@
 	  font-weight: bold;
 	}
 	&--copyright {
+		display: flex;
+	  align-items: center;
+	  justify-content: center;
 		font-size: @font-size-first; 
 	  line-height: @line-height;
 	}
+}
+.page-footer__copyright-icon {
+  width: 27px;
+	height: 34px;
+}
+.page-footer__copyright-title {
+	margin-right: 10px;
+}
+.page-footer__link--copyright:hover .page-footer__copyright-icon {
+	fill: @bg-color-first;
+}
+.page-footer__link--copyright:active .page-footer__copyright-icon {
+	fill: @bg-clor-hover-academy-icon;
 }
