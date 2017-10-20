@@ -8,10 +8,11 @@
 	background-color: @bg-color-first;
 	background-position: center;
 	background-repeat: no-repeat;
-	font-size: 0;
-	&:last-of-type {
-		margin-right: 0;
-	}
+	font-size: 0;	
+	transition-duration: 0.3s;
+	//&:nth-of-type(3n) {
+	//	margin-right: 0;
+	//}
 	/*&--Twitter {
 		background-image: url("../img/icon-twitter.svg");		
 	}
@@ -27,6 +28,9 @@
 	&:active {
 		background-color: @bg-color-active-link;
 	}
+}
+.social__icon {
+	transition-duration: 0.2s;
 }
 .social:active .social__icon {	
 	fill: rgba(255,255,255, 0.3);
