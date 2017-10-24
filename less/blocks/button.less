@@ -1,16 +1,17 @@
 .button {
 	display: block;
-	width: 100%;
+	margin: 0 auto;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: @text-color-first;
-	font-size: @font-size-second;
-	line-height: @line-height;
-	font-weight: bold;
+	transition-property: background;
 	transition-duration: 0.5s;
-	outline: none;
+	//outline: none;
 	&--reservation {
 		padding: 15px 0; 
+		color: @text-color-first;
+	  font-size: @font-size-second;
+	  line-height: @line-height;
+	  font-weight: bold;
 	  background-color: @bg-color-first;
 	}
 	&:hover {
@@ -33,5 +34,18 @@
 	}
 }
 @media @tablet-width {
-	
+	.button {
+	  &--reservation {
+		  width: 59.6%;
+		  padding: 20px 0;
+		  margin: 0 auto;		
+	  }
+	}
+}
+@media @desktop-width {
+	.button {
+		&--reservation {
+			width: 38.1%;
+	  }   
+  }
 }
