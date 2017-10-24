@@ -1,62 +1,124 @@
 .reasons {
-	padding-left: 21%;
-	padding-right: 15%;
-	padding-bottom: 40px;
+	padding: 0 21.5%;
+	padding-top: 38px;
+	padding-bottom: 38px;	
 }
 .reasons-list {
-	margin: 0;
-	padding: 0;
 	list-style: none;
+	margin: 0;
+	padding:0;
+	text-align: left;
+	text-transform: uppercase;
 }
 .reasons__item {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	text-transform: uppercase;
-	margin-bottom: 35px;
-	&:last-child {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 33px;
+	&:last-of-type {
 		margin-bottom: 0;
 	}
+}
+.reasons__item-title {
+	position:relative;
+	margin-bottom: 20px;
+	font-size: @font-size;
+	line-height: @line-height;
+	font-weight: bold;
 	&::before {
 		position: absolute;
 		content: "";
-		top: -5px;
+		bottom: 0px;
 		left: -50px;
-		 background-repeat: no-repeat;
-		background-position: center;
+		background-repeat: no-repeat;
 	}
 	&--hotel {
 		&::before {
-			width: 39px;
+			width: 38px;
 			height: 37px;
-			background-image: url("../img/icon-house.svg");
-		}		
+			background-image: url('../img/icon-house.svg');			
+		}
 	}
 	&--souvenir {
 		&::before {
-			width: 39px;
+			width: 32px;
 			height: 38px;
-			background-image: url("../img/icon-gift.svg");
-	  }
+			background-image: url('../img/icon-gift.svg');
+		}
 	}
 	&--food {
 		&::before {
 			width: 40px;
 			height: 36px;
-			background-image: url("../img/icon-burger.svg");
+			background-image: url('../img/icon-burger.svg');
 		}
 	}
-}
-.reasons__item-title {
-	margin-bottom: 20px;
-  font-size: @font-size;
-	line-height: @line-height;
-	font-weight: bold;
 }
 .reasons__item-text {
 	margin: 0;
 	padding: 0;
-	color: @text-color-second;
 	font-size: @font-size-first;
 	line-height: @line-height-first;
+	color: @text-color-second;
+}
+@media @tablet-width {
+	.reasons {
+		padding: 0;
+		padding-top: 160px;
+		padding-bottom: 63px;
+	}
+	.reasons-list {
+	  display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.reasons__item {
+		width: 33.3%;		
+		margin-bottom: 0;
+		&--souvenir {
+			order: 2;
+		}
+		&--food {
+			order: 1;
+		}
+	}
+	.reasons__item-title {
+	  margin-bottom: 20px;
+	  font-size: @font-size-second;
+	  line-height: @line-height;	  
+	  &::before {
+		  bottom: 50px;
+		  left: 0;
+			right:0;
+			margin: auto;
+	  }
+	  &--hotel {
+		  &::before {
+			  width: 75px;
+			  height: 72px;
+			}
+	  }
+	  &--souvenir {
+		  &::before {
+			  width: 66px;
+			  height: 76px;
+		  }
+	  }
+	  &--food {
+		  &::before {
+			  width: 79px;
+			  height: 69px;
+		  }
+ 	  }
+  }
+	.reasons__item-text {
+		padding: 0 17%;
+	}
+}
+@media @desktop-width {
+	.reasons {
+		padding-bottom: 85px;
+	}
+	.reasons__item-text {
+		padding: 0 12%;
+	}
 }

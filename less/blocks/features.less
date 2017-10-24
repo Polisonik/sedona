@@ -1,10 +1,11 @@
 .features {	
 	text-align: center;
+	padding-top: 40px;
+	background-color: @bg-color;
 }
 .features__title {
 	padding: 0;
-	margin: 0;	
-	margin-top: 40px;
+	margin: 0;
 	margin-bottom: 36px;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -34,6 +35,9 @@
 	}
 	.features__row {
 		display: flex;
-		
+		background-color: @bg-color-first;
+		&--bg-grey {
+			background-color: @bg-color-second;
+		}
 	}
 }
