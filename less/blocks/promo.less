@@ -1,0 +1,57 @@
+.promo {
+	position: relative;
+	padding-top: 52px;
+	padding-bottom: 67px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	&::before {
+	  position: absolute;
+		content: "";
+		width: 100%;
+		min-height: 26px;
+		bottom: 0;
+		left: 0;
+		background-image: url("../img/bg-intro-triangle-mobile.svg");
+		background-repeat: no-repeat;
+		background-position: bottom;
+		
+	}
+}
+.promo__img {
+	display: block;
+	width: 229px;
+	height: 29px;  
+	margin: 0 auto;
+}
+@media @tablet-width {
+	.promo {
+		padding-top: 95px;
+		padding-bottom: 117px;
+		background-image: url("../img/bg-back-tablet@1x.jpg");
+		&::before {
+			min-height: 59px; // исправить на резину!
+			background-image: url("../img/bg-intro-triangle-tablet.svg");
+		}
+	}
+	.promo__img {
+		widdtH: 458px;
+		height: 78px;		 
+	}
+}
+@media @desktop-width {
+	.promo {
+		padding-top: 102px;
+		padding-bottom: 120px;
+		background-image: url("../img/bg-back-desktop@1x.jpg");
+		&::before {
+			min-height: 59px; // исправить на резину!
+			background-image: url("../img/bg-intro-triangle-desktop.svg");
+		}
+  }
+	.promo__img {
+		width: 461px;
+		height: 79px;
+	}
+}
