@@ -34,71 +34,71 @@
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="review__form" method="post"  action="https://echo.htmlacademy.ru/">
-          <fieldset class="review__item  review__item--name">
-            <legend class="review__item-title">Представьтесь</legend>
+          <fieldset class="review__item  review__item--introduce">
+            <b class="review__item-title">Представьтесь</b>
             <div class="review__item-field  review__item-field--introduce">
-              <label class="review__item-label" for="name">Имя<sup class="review__item-index">*</sup>:</label>
+              <label class="review__item-label  review__item-label--introduce" for="name">Имя<sup class="review__item-index">*</sup>:</label>
               <input class="review__item-input" name="name" type="text" id="name" placeholder="Петр">
             </div>
             <div class="review__item-field  review__item-field--introduce">
-              <label class="review__item-label" for="surname">Фамилия<sup class="review__item-index">*</sup>:</label>
+              <label class="review__item-label  review__item-label--introduce" for="surname">Фамилия<sup class="review__item-index">*</sup>:</label>
               <input class="review__item-input" name="surname" type="text" id="surname" placeholder="Иванов">
             </div>
             <div class="review__item-field  review__item-field--introduce">
-              <label class="review__item-label" for="patronymic">Отчество:</label>
+              <label class="review__item-label  review__item-label--introduce" for="patronymic">Отчество:</label>
               <input class="review__item-input" name="patronymic" type="text" id="patronymic" placeholder="Александрович">
             </div>          
           </fieldset>
           
           <fieldset class="review__item">
-            <legend class="review__item-title">Контактная информация</legend>
-            <div class="review__item-field">
-              <label class="review__item-label  review__item-label--introduce" for="phone">Контактный телефон<sup class="review__item-index">*</sup>:</label>
+            <b class="review__item-title">Контактная информация</b>
+            <div class="review__item-field  review__item-field--contacts">
+              <label class="review__item-label  review__item-label--contacts" for="phone">Контактный телефон<sup class="review__item-index">*</sup>:</label>
               <input class="review__item-input" name="phone" type="tel" id="phone" placeholder="Введите телефон">
             </div>
-            <div class="review__item-field">
-              <label class="review__item-label" for="email">Электронная почта<sup class="review__item-index">*</sup>:</label>
+            <div class="review__item-field  review__item-field--contacts">
+              <label class="review__item-label  review__item-label--contacts" for="email">Электронная почта<sup class="review__item-index">*</sup>:</label>
               <input class="review__item-input" name="email" type="email" id="email" placeholder="Введите e-mail">
             </div>            
           </fieldset>
           
-          <fieldset class="review__item">
-            <legend class="review__item-title">Ваше общее впечатление:</legend>
-            <div class="review__item-field">
-              <input class="review__item-input" type="radio" name="impression" id="positive">
-              <label class="review__item-label" for="positive">Скорее положительное</label>
+          <fieldset class="review__item  review__item--impression">
+            <b class="review__item-title  review__item-title--impression">Ваше общее впечатление:</b>
+            <div class="review__item-field  review__item-field--impression">
+              <input class="review__item-input" type="radio" name="impression" id="positive" checked>
+              <label class="review__item-label  review__item-label--custom  review__item-label--impression" for="positive">Скорее положительное</label>
             </div>
-            <div class="review__item-field">
+            <div class="review__item-field  review__item-field--impression">
               <input class="review__item-input" type="radio" name="impression" id="negative">
-              <label class="review__item-label" for="negative">Скорее отрицательное</label>
+              <label class="review__item-label  review__item-label--custom  review__item-label--impression" for="negative">Скорее отрицательное</label>
             </div>
-            <div class="review__item-field">
+            <div class="review__item-field  review__item-field--impression">
               <input class="review__item-input" type="radio" name="impression" id="no-answer">              
-              <label class="review__item-label" for="positive">Затрудняюсь ответить</label>
+              <label class="review__item-label  review__item-label--custom  review__item-label--impression" for="no-answer">Затрудняюсь ответить</label>
             </div>                       
           </fieldset>
           
-          <fieldset class="review__item">
-            <legend class="review__item-title">Посещенные достопримечательности:</legend>
+          <fieldset class="review__item  review__item--sight">
+            <b class="review__item-title  review__item-title--sight">Посещенные достопримечательности:</b>
             <div class="review__item-field">
               <input class="review__item-input" type="checkbox" name="bridge" id="bridge">
-              <label class="review__item-label" for="bridge">Мост Дьявола</label>
+              <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="bridge">Мост Дьявола</label>
             </div>
             <div class="review__item-field">
               <input class="review__item-input" type="checkbox" name="park" id="park">
-              <label class="review__item-label" for="park">Слайд-парк</label>
+              <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="park">Слайд-парк</label>
             </div>
            <div class="review__item-field">
               <input class="review__item-input" type="checkbox" name="mountain" id="mountain">
-              <label class="review__item-label" for="mountain">Гора-Колокол</label>
+              <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="mountain">Гора-Колокол</label>
             </div>
             <div class="review__item-field">
               <input class="review__item-input" type="checkbox" name="сliffs" id="сliffs">
-              <label class="review__item-label" for="сliffs">Красные скалы</label>
+              <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="сliffs">Красные скалы</label>
             </div>  
           </fieldset>
           <fieldset class="review__item  review__item--message">
-            <legend class="review__item-title">Опишите свои эмоции::</legend>
+            <b class="review__item-title">Опишите свои эмоции::</b>
             <textarea class="review__item-message" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="button button--send-review" type="submit">Отправить отзыв</button>
