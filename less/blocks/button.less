@@ -5,14 +5,19 @@
 	text-transform: uppercase;
 	transition-property: background;
 	transition-duration: 0.5s;
+	font-size: @font-size-second;
+	line-height: @line-height;
+	font-weight: bold;
+	background-color: @bg-color-first;
+	color: @text-color-first;
 	//outline: none;
 	&--reservation {
-		padding: 15px 0; 
-		color: @text-color-first;
-	  font-size: @font-size-second;
-	  line-height: @line-height;
-	  font-weight: bold;
-	  background-color: @bg-color-first;
+		padding: 15px 0;		
+	}
+	&--send-review {
+		border: none;
+		width: 100%;
+		padding: 20px 0;
 	}
 	&:hover {
 		background-color: @bg-color-hover-link;
