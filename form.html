@@ -36,7 +36,7 @@
         <form class="review__form" method="post"  action="https://echo.htmlacademy.ru/">
           <div class="review--wrapper"> 
             <fieldset class="review__item  review__item--introduce">
-              <b class="review__item-title">Представьтесь</b>
+              <b class="review__item-title  review__item-title--introduce">Представьтесь</b>
               <div class="review__item-field  review__item-field--introduce">
                 <label class="review__item-label  review__item-label--introduce" for="name">Имя<sup class="review__item-index">*</sup>:</label>
                 <input class="review__item-input" name="name" type="text" id="name" placeholder="Петр">
@@ -52,7 +52,7 @@
             </fieldset>
           
             <fieldset class="review__item  review__item--contacts">
-              <b class="review__item-title">Контактная информация</b>
+              <b class="review__item-title  review__item-title--contacts">Контактная информация</b>
               <div class="review__item-field  review__item-field--contacts  review__item-field--phone">
                 <label class="review__item-label  review__item-label--contacts" for="phone">Контактный телефон<sup class="review__item-index">*</sup>:</label>
                 <input class="review__item-input" name="phone" type="tel" id="phone" placeholder="Введите телефон">
@@ -81,22 +81,24 @@
           
             <fieldset class="review__item  review__item--sight">
               <b class="review__item-title  review__item-title--sight">Посещенные достопримечательности:</b>
-              <div class="review__item-field  review__item-field--sight">
-                <input class="review__item-input" type="checkbox" name="bridge" id="bridge">
-                <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="bridge">Мост Дьявола</label>
-              </div>
-              <div class="review__item-field  review__item-field--sight">
-                <input class="review__item-input" type="checkbox" name="park" id="park">
-                <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="park">Слайд-парк</label>
-              </div>
-             <div class="review__item-field  review__item-field--sight">
-               <input class="review__item-input" type="checkbox" name="mountain" id="mountain">
-               <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="mountain">Гора-Колокол</label>
-             </div>
-             <div class="review__item-field  review__item-field--sight">
-               <input class="review__item-input" type="checkbox" name="сliffs" id="сliffs">
-               <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="сliffs">Красные скалы</label>
-             </div>  
+              <div class="review__inner">
+                <div class="review__item-field  review__item-field--sight">
+                  <input class="review__item-input" type="checkbox" name="bridge" id="bridge">
+                  <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="bridge">Мост Дьявола</label>
+                </div>
+                <div class="review__item-field  review__item-field--sight">
+                  <input class="review__item-input" type="checkbox" name="park" id="park">
+                  <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="park">Слайд-парк</label>
+                </div>
+               <div class="review__item-field  review__item-field--sight">
+                 <input class="review__item-input" type="checkbox" name="mountain" id="mountain">
+                 <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="mountain">Гора-Колокол</label>
+               </div>
+               <div class="review__item-field  review__item-field--sight">
+                 <input class="review__item-input" type="checkbox" name="сliffs" id="сliffs">
+                 <label class="review__item-label  review__item-label--custom  review__item-label--sight" for="сliffs">Красные скалы</label>
+               </div>
+							</div>   
             </fieldset>
             <fieldset class="review__item  review__item--message">
               <b class="review__item-title">Опишите свои эмоции:</b>
