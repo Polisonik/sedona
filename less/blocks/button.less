@@ -4,7 +4,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	transition-property: background;
-	transition-duration: 0.5s;
+	transition-duration: 0.2s;
 	font-size: @font-size-second;
 	line-height: @line-height;
 	font-weight: bold;
@@ -24,10 +24,8 @@
 	}
 	&:active {
 		background-color: @bg-color-active-link;
-	}
-	&:focus {
-		border: 1px solid @bg-color-active-link;
-	}
+		color: rgba(255, 255, 255, 0.3);
+	}	
 	&--disabled {
 		background-color: @bg-color-disable;
 		&:hover {

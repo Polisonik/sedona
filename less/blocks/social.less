@@ -8,32 +8,23 @@
 	margin-right: 2%;
 	margin-bottom:2px;
 	background-color: @bg-color-first;
-	//background-position: center;
-	//background-repeat: no-repeat;
 	font-size: 0;	
-	transition-duration: 0.3s;
+	transition-duration: 0.2s;
 	&:nth-of-type(3n) {
 		margin-right: 0;
-	}
-	/*&--Twitter {
-		background-image: url("../img/icon-twitter.svg");		
-	}
-	&--Facebook {
-		background-image: url("../img/icon-facebook.svg");
-	}
-	&--Youtube {
-		background-image: url("../img/icon-youtube.svg");
-	} */
+	}	
 	&:hover {
 		background-color: @bg-color-hover-link;
 	}
 	&:active {
 		background-color: @bg-color-active-link;
 	}
-}
-.social__icon {
+}	
+.social-link__icon {
+    fill: #ffffff;
 	transition-duration: 0.2s;
+	//opacity: 0.3;
 }
-.social:active social-link__icon {	
-	fill: rgba(255,255,255, 0.3);
+.social-link:active .social-link__icon {	
+	opacity: 0.3;
 }

@@ -13,7 +13,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	color: @text-color;
-	background-color: @bg-color;
+	background-color: @bg-color;	
 	&--instagram {
 		font-size: @font-size-second;
 		line-height: @line-height;
@@ -25,7 +25,7 @@
 		justify-content: center;
 		font-size: @font-size-first;
 		line-height: @line-height;
-	}
+	}  	
 }
 .page-footer__social-links {
 	display: flex;
@@ -38,7 +38,15 @@
 .page-footer__copyright-icon {
 	width: 27px;
 	height: 35px;
+	transition-duration: 0.2s;
 }
+.page-footer__link--copyright:hover .page-footer__copyright-icon {
+	fill: #81b3d2;
+}
+.page-footer__link--copyright:active .page-footer__copyright-icon {
+	fill: #b2b2b2;
+}
+
 @media @tablet-width {
 	.page-footer {
 		display: flex;
